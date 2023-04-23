@@ -25,8 +25,9 @@ jobs:
       - name: build
         run: |
           ./gradlew assembleRelease
+          # gradle clean
       - name: Upload apk
         uses: actions/upload-artifact@v3
         with:
           name: datmusic-2.3.0-beta3
-          path: /app/build/outputs/apk/
+          path: ./app/build/outputs/apk/
