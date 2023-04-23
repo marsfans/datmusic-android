@@ -24,9 +24,9 @@ jobs:
 
       - name: build
         run: |
-          ./gradlew publishRelease --track=production
+          ./gradlew publishReleaseApk --track=production
       - name: Upload apk
         uses: actions/upload-artifact@v3
         with:
-          name: 2.3.0-beta3
+          name: datmusic-2.3.0-beta3
           path: /app/build/outputs/apk/
