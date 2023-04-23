@@ -24,7 +24,7 @@ jobs:
 
       - name: build
         run: |
-          ./gradlew publishReleaseApk --track=production
+          ./gradlew assembleRelease
       - name: Upload apk
         uses: actions/upload-artifact@v3
         with:
